@@ -1,0 +1,10 @@
+<li appHighlightCompleteTodo [isCompleted]="todo().completed" class="todo-item">
+    <input
+      type="checkbox"
+      [checked]="todo().completed"
+      (change)="this.toggleTodo()"
+    />
+
+    {{ todo().title | uppercase}}
+
+  </li>
